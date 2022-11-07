@@ -1,3 +1,6 @@
+
+// ...cont READING AND WRITING FILES
+
 const fs = require('fs')
 
 const rs = fs.createReadStream('./files/lorem.txt', {encoding: 'utf8'})

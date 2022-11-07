@@ -19,14 +19,14 @@ const fsPromises = require('fs').promises
     console.log(data);
 })  */
 
-/* // Using path module
+ // Using path module
 
 fs.readFile(path.join(__dirname,'files','starter.txt'), 'utf8', (err, data) => {
     if (err) throw err;
     console.log(data);
-}) */ 
+})  
 
-/* // WRITING TO FILE
+ // WRITING TO FILE
 
 fs.writeFile(path.join(__dirname,'files','reply.txt'), 'Nice to meet you.', (err) => {
     if (err) throw err;
@@ -43,7 +43,7 @@ fs.writeFile(path.join(__dirname,'files','reply.txt'), 'Nice to meet you.', (err
             console.log('Rename complete');
         })
     })
-}) */
+}) 
 
 // Using FETCH to read and write to files to prevent callback hell(using PROMISES)
 
