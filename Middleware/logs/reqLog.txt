@@ -1,0 +1,27 @@
+20221101	16:02:59	7042dcb7-dbd9-40ca-a250-8c3f2f030c12	/data/data.json	GET
+20221101	16:03:24	4b43f9ce-f0dd-487d-b49f-ba5ccd3fd2d1	/data/data.txt	GET
+20221101	16:04:21	72d288c4-38ef-4553-be47-3a89a8f854f7	/data/data.txt	GET
+20221111	23:58:45	2263cdb0-a851-4a02-aad7-79c66fc7a514	GET	undefined	/css/style.css
+20221111	23:58:47	9d5703e1-ea29-4f08-a141-fb8a5b20dfc1	GET	undefined	/
+20221111	23:58:47	5610c8e9-e70f-40ed-9772-cb14c8793ff4	GET	undefined	/css/style.css
+20221111	23:58:49	3517cd39-1276-4e7f-9577-1acfa4ee7f4b	GET	undefined	/
+20221111	23:58:49	45238857-bcb7-4a36-8299-a1fdc40ffb48	GET	undefined	/css/style.css
+20221112	00:12:50	8591ce01-76ef-48b1-b51e-3333259212e6	GET	undefined	/css/style.css
+20221112	00:12:53	4655cd35-8840-4622-a2e6-7f0343351e43	GET	undefined	/
+20221112	00:12:53	88bcf767-2acb-4b84-88e8-2b011d8d28c9	GET	undefined	/css/style.css
+20221112	01:08:13	0c06970e-9382-47b5-bed9-94034b928e77	GET	undefined	/css/style.css
+20221112	01:08:18	9f61e29a-a236-4317-810a-b25b75ab85ec	GET	undefined	/
+20221112	01:08:18	68821fab-4a17-48e0-8d38-f501012e9fac	GET	undefined	/css/style.css
+20221112	01:08:55	e781fcf4-2832-4cf4-9599-6b917812ba27	GET	undefined	/
+20221112	01:09:33	dad0b99e-e1fd-4de6-8d3f-e16ead385894	GET	undefined	/
+20221112	01:10:17	312e3569-5ced-4a33-8725-dd4294065c98	GET	undefined	/
+20221112	01:12:00	7fe2412b-c405-4cd4-bbe5-6e7aa79551ba	OPTIONS	https://www.google.com	/
+20221112	01:12:00	56567335-7f25-4db3-9132-39cd2b69cff7	GET	https://www.google.com	/
+20221112	01:12:49	d54eb9e0-336d-42b1-9b10-54b9abe4af4c	OPTIONS	https://www.google.com	/
+20221112	01:12:49	2c62e60c-1eb8-4e74-9ab6-5dd4e24ade03	GET	https://www.google.com	/
+20221112	01:13:08	8e19cd90-fe48-49c9-bb0e-c43f48b568ab	OPTIONS	https://www.google.com	/
+20221112	01:13:08	7cd2831e-652b-4939-80aa-371c6efe9cd8	GET	https://www.google.com	/
+20221112	01:31:27	708e9ceb-d56d-4205-b45a-c174139de5c0	OPTIONS	https://www.google.com	/
+20221112	01:31:27	7ef655b3-b220-4d97-987e-31d08b250734	GET	https://www.google.com	/
+20221112	01:31:56	01d3049a-5880-45a7-a98d-5df19cb13c07	OPTIONS	https://www.google.com	/
+20221112	01:31:56	be024249-9e84-44e9-86f1-484d0878d61b	GET	https://www.google.com	/
