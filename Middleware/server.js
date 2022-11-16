@@ -6,6 +6,7 @@ const cors = require('cors')
 const { dirname } = require('path')
 const path = require('path')
 const { logger } = require('./middleware/logEvents')
+const  errorHandler  = require('./middleware/errorHandler')
 
 const app = express()
 
@@ -18,7 +19,7 @@ app.use(logger)
 const whiteList = ['https://www.google.com','http://127.0.0.1:5500','http://localhost:3500']
 const corsOptions = {
     origin: (origin, callback) => {
-        if(whiteList.indexOf(origin) !== -1){
+        if(whiteList.indexOf(origin) !== -1 || !origin){
             callback(null, true)
         }
         else{
@@ -28,6 +29,8 @@ const corsOptions = {
     optionsSuccessStatus: 200
 }
 app.use(cors(corsOptions))
+
+// START BUILT-IN MIDDLEWARE
 
 //built-in middleware to handle urlencoded data
 //in other words, form data:
@@ -39,6 +42,8 @@ app.use(express.json())
 
 //serve static files
 app.use(express.static(path.join(__dirname, '/public')))
+
+// END BUILT-IN MIDDLEWARE
 
 app.get('^/$|/index(.html)?', (req, res) => {
     /* res.sendFile('/views/index.html', {root: __dirname}) */
@@ -65,26 +70,35 @@ app.get('/home(.html)?', (req, res, next) => {
   //chaining route handlers
 
 const one = (req, res, next) => {
-    console.log('one');
+    console.log('one')
     next()
 }
 
 const two = (req, res, next) => {
-    console.log('two');
+    console.log('two')
     next()
 }
 
 const three = (req, res, ) => {
-    console.log('three');
+    console.log('three')
     res.send('Finished!')
 }
 
 app.get('/chain(.html)?', [one, two, three])
 
-app.get('/*', (req, res) => {
-    res.status(404).sendFile(path.join(__dirname,'views','404.html'))
+app.all('*', (req, res) => {
+    //res.status(404).sendFile(path.join(__dirname,'views','404.html')) - use this with app.get
+    res.status(404)
+    if (req.accepts('html')) {
+        res.sendFile(path.join(__dirname,'views','404.html'))
+    } else if (req.accepts('json')) {
+        res.json({ error: "404 Not Found" })
+    } else {
+        res.type('txt').send( "404 Not Found" )
+    }       
 })
 
+app.use(errorHandler)
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`))
 
