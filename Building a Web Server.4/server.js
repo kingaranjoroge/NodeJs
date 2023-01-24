@@ -94,7 +94,7 @@ const server = http.createServer((req, res) =>{
 
 
 
-// can also be done in the following ways the not convenient
+// can also be done in the following ways though not convenient
     /*let filePath
 
         if(req.url === '/' || req.url === 'index.html'){
